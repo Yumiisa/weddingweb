@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgb(56, 71, 90);
+}
+ul {
+    list-style:none;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    position: relative;
+    
+}
+
+ul li a{
+    display:block;
+    text-decoration:none;
+}
+a:hover{
+    color:white;
+    background-color:cadetblue;
+}
+ul li ul {
+    display:block;
+    padding-bottom:70px;
+    position:absolute;
+    background-color:blueviolet;
+    opacity: .5;
+}
+    ul li ul li{
+    padding-top: 30px;
+
+}
+ul li ul{
+    display:none;
+}
+ul li:hover ul{
+    display:block;
+}
+select{
+    outline:none;
+    width:100px;
+    border-radius:10px;
+    text-align:center;
+}
+.down{
+
+    position:relative;
+    display: inline-block;
+    z-index: 10;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+button{
+    display: inline-block;
+    padding: 10px;
+    background-color: cyan;
+    border:none;
+    color:white;
+}
+button:hover{
+    background-color: darkblue;
+}
+.content{
+    position:absolute;
+    width:100%;
+    background-color:orangered ;
+    
+    display: none;
+    
+
+}
+.content a{
+    text-decoration:none;
+    padding:5px;
+    display:block;
+    
+}
+.down:hover .content{
+    display: block;
+}
+.name{
+    margin-left: 400px;
+    position:relative;
+    display:inline-block;
+}
+.btn{
+    width:100px;
+    height:30px;
+    background-color: seagreen;
+}
+.btn:hover{
+    background-color: tomato;
+}
+.forum{
+    position:absolute;
+    width:100%;
+    background-color:dodgerblue;
+    display:none;
+
+}
+.forum a{
+    text-decoration:none;
+    display:block;
+    padding:10px;
+}
+.name:hover .forum{
+    display:block;
+}
+
+    
+
